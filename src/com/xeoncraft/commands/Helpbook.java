@@ -8,11 +8,11 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
-import org.bukkit.material.Command;
+import org.bukkit.command.Command;
 
 public class Helpbook implements CommandExecutor {
 
-    public helpbook(main main)
+    public Helpbook(main main)
     {
     }
 
@@ -20,6 +20,8 @@ public class Helpbook implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
 
         Player player = (Player)sender;
+
+        if(sender instanceof Player)
 
         if (cmd.getName().equalsIgnoreCase("helpbook")) {
             if ((sender instanceof Player)) {

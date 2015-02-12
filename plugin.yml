@@ -1,0 +1,29 @@
+name: VortexPlugin
+main: com.xeoncraft.main
+author: Whiztech,Bedrockblaster
+version: 0.0.1
+commands:
+     fly:
+          description: Change the fly mode and the fly speed
+     tphere:
+          description: Teleport a player to you
+     invsee:
+          description: Opens the inventory of the selected player
+     playerinfo:
+          description: Get all infos of a player
+          aliases: [pinfo]
+     getip:
+          description: Get the ip adress of a player
+     list:
+          description: Gives you a list of all online players
+     sethome:
+          description: Set your own homepoint
+     home:
+          description: Teleports you to your home
+     clearchat:
+          description: Clear the global chat
+          aliases: [cc]
+     msg:
+          description: Send a player a private message
+     speed:
+          description: Sets your walk/fly speed

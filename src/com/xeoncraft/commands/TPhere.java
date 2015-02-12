@@ -28,7 +28,7 @@ public class TPhere implements CommandExecutor {
 
         if (cmd.getName().equalsIgnoreCase("tphere")) {
             if (args.length == 1) {
-                if (p.hasPermission("overpoweredplugin.tphere")) {
+                if (p.hasPermission("vn.tphere")) {
                     Player t = Bukkit.getServer().getPlayer(args[0]);
                     if (t != null) {
                         t.teleport(p.getLocation());
@@ -40,7 +40,7 @@ public class TPhere implements CommandExecutor {
                 } else {
                     p.sendMessage(prefix + insufperms);
                 }
-            } else if (p.hasPermission("overpoweredplugin.tphere"))
+            } else if (p.hasPermission("vn.tphere"))
                 p.sendMessage(prefix + incusage + "/tphere <player>");
             else
                 p.sendMessage(prefix + insufperms);

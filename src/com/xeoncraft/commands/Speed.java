@@ -24,7 +24,7 @@ public class Speed implements CommandExecutor {
         if(sender instanceof Player);
 
         if (cmd.getName().equalsIgnoreCase("speed")) {
-            if (p.hasPermission("overpoweredplugin.speed")) {
+            if (p.hasPermission("vn.speed")) {
                 float speed = 0.0F;
                 if (args.length >= 1) {
                     speed = Float.valueOf(Integer.parseInt(args[0])).floatValue();
